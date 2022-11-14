@@ -35,7 +35,7 @@ body{
   
 }
 
-.nav-link2{
+.nav-link1{
     color: grey;
     text-decoration: none;
     font-size: 20px;
@@ -48,7 +48,8 @@ body{
 .logo{
     font-size: 40px;
     font-weight:  bold;
-    padding: 0 40px;
+    position: relative;
+    left: 130px;
     line-height:  85px;
    
 }
@@ -77,13 +78,22 @@ body{
    border-radius: 4px;
 }
 
+.text-format{
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: unset;
+    
+    
+}
+
+
 .footer{
     
     position: absolute;
     font-size: 20px;
     bottom: 0px;
     margin-left: 1050px;
-    padding: 9 40px;
+    padding: 9px 40px;
     
     
 }

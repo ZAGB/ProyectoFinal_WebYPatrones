@@ -38,7 +38,19 @@ public class TemplateResolverConfiguration {
          
     }
     
-     
+         @Bean
+    public SpringResourceTemplateResolver templateResolver_2 (){
+        
+         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+         templateResolver.setPrefix("templates/asesoria");
+         templateResolver.setSuffix(".html");
+         templateResolver.setTemplateMode(TemplateMode.HTML);
+         templateResolver.setCharacterEncoding("UTF-8");
+         templateResolver.setOrder(2);
+         templateResolver.setCheckExistence(true);
+         return templateResolver;
+         
+    }    
     
 }
 

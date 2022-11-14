@@ -11,18 +11,28 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AsesoriaController {
     
     @GetMapping("/asesoria/asesoriaInf")
-    public String Ingresar(){
-    return "/usuario/loginUsuario";
+    public String Asesoria(){
+    return "/asesoria/asesoriaInf";
     } 
     
-    @GetMapping("/usuario/cuentaUsuario")
-    public String PerfilUsuario(){
-    return "/usuario/cuentaUsuario";
+    @GetMapping("/asesoria/informacionTransportes")
+    public String InformacionDeTransportes(){
+    return "/asesoria/informacionTransportes";
     } 
     
-    @GetMapping("/usuario/formularioRegistroUsuario")
-    public String RegistrarOModificar(){
-    return "/usuario/formularioRegistroUsuario";
+    @GetMapping("/asesoria/aereoInf")
+    public String InfomacionA(){
+    return "/asesoria/aereoInf";
+    } 
+    
+    @GetMapping("/asesoria/maritimoInf")
+    public String InfomacionM(){
+    return "/asesoria/maritimoInf";
+    } 
+    
+    @GetMapping("/asesoria/terrestreInf")
+    public String InfomacionT(){
+    return "/asesoria/terrestreInf";
     } 
     
 }
