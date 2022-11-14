@@ -68,6 +68,7 @@ body{
 .nav-menu-link:hover{
     background-color:  #2388da;
     transition:  0.5s;
+    color: black;
     
 }
 
