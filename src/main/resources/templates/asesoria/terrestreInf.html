@@ -1,15 +1,26 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html xmlns: th="http://www.thymeleaf.org">
     <head>
-        <title>TODO supply a title</title>
+        <title>Transporte Terrestre</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="/css/inicio.css" rel="stylesheet" type="text/css"/> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="/css/fondos.css" rel="stylesheet" type="text/css"/>
+        <a ></a>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container-fluid colorB">
+        <header th:fragment="header">
+            <h1 class="lead text-center font">Asesoria y Cotizaciones PADAZU </h1>
+            <nav class="navbar navbar-expand-lg navbar-light colorB">
+              <div class="container-fluid navbar-nav">
+                    <a class="nav-link colorBtn font2" th:href="@{/}">Inicio |</a>
+                    <a class="nav-link colorBtn font2" th:href="@{/usuario/loginUsuario}">Atras |</a>
+              </div>
+
+            </nav>
+        </header>
+        </div>
+        <!-- footer th:replace="plantillas/Plantilla1Fondo :: footer"/> -->
     </body>
+   
 </html>

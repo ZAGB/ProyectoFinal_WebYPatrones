@@ -1,0 +1,30 @@
+
+
+body{
+    font-family: sans-serif;
+    background-color: #e6f7ff;
+}
+
+
+.colorB{
+    background-color:  #40a9ff;
+    color: gray; 
+    margin: 0px;
+}
+
+.colorBtn:hover{   
+    background-color:  #2388da;
+    transition:  0.5s;
+    color: black;
+    text-decoration: none;
+}
+
+.font{
+    font-family: sans-serif;
+    font-size: 50px;   
+}
+
+.font2{
+    font-family: sans-serif;
+    font-size: 30px;   
+}
