@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.ProyectoFinal.controller;
 
-/**
- *
- * @author Pamela
- */
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+@Slf4j
 public class ComparacionController {
-    
+    @GetMapping("/cotizar/cotizarInf")
+    public String Cotizar(){
+    return "/cotizar/cotizarInf";
+    } 
+    @GetMapping("/cotizar/transporteCotizar")
+    public String TransporteCotizar(){
+    return "/cotizar/transporteCotizar";
+    }
+    @GetMapping("/comparar/TransporteComparar")
+    public String TransporteComparar(){
+    return "/comparar/TransporteComparar";
+    } 
 }

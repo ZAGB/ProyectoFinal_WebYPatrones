@@ -25,4 +25,8 @@ public class UsuarioController {
     return "/usuario/formularioRegistroUsuario";
     } 
     
+    @GetMapping("/usuario/cotizarycomparar")
+    public String CotizarYComparar(){
+    return "/usuario/cotizarycomparar";
+    } 
 }
