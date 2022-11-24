@@ -51,7 +51,19 @@ public class TemplateResolverConfiguration {
          return templateResolver;
          
     }    
-    
+         @Bean
+    public SpringResourceTemplateResolver templateResolver_3 (){
+        
+         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+         templateResolver.setPrefix("templates/comparacion");
+         templateResolver.setSuffix(".html");
+         templateResolver.setTemplateMode(TemplateMode.HTML);
+         templateResolver.setCharacterEncoding("UTF-8");
+         templateResolver.setOrder(2);
+         templateResolver.setCheckExistence(true);
+         return templateResolver;
+         
+    }  
 }
 
     
