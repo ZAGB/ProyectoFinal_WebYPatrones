@@ -45,4 +45,14 @@ body{
   width: 890px;
   height:500px; 
 }
+.CustomP img{
+    
+    border-radius: 50%;
+    border: 6px solid #eaeaea;   
+}
 
+.CustomP .roundC input[type="file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
