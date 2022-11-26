@@ -59,7 +59,20 @@ public class TemplateResolverConfiguration {
          templateResolver.setSuffix(".html");
          templateResolver.setTemplateMode(TemplateMode.HTML);
          templateResolver.setCharacterEncoding("UTF-8");
-         templateResolver.setOrder(2);
+         templateResolver.setOrder(3);
+         templateResolver.setCheckExistence(true);
+         return templateResolver;
+         
+    }  
+             @Bean
+    public SpringResourceTemplateResolver templateResolver_4 (){
+        
+         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+         templateResolver.setPrefix("templates/cotizar");
+         templateResolver.setSuffix(".html");
+         templateResolver.setTemplateMode(TemplateMode.HTML);
+         templateResolver.setCharacterEncoding("UTF-8");
+         templateResolver.setOrder(4);
          templateResolver.setCheckExistence(true);
          return templateResolver;
          
