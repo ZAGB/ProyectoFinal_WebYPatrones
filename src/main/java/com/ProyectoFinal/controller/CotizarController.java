@@ -17,4 +17,16 @@ public class CotizarController {
     public String TransporteCotizar(){
     return "/cotizar/transporteCotizar";
     } 
+   @GetMapping("/cotizar/cotizaAereo")
+    public String cotizaAereo(){
+    return "/cotizar/cotizaAereo";
+    } 
+    @GetMapping("/cotizar/cotizaTerrestre")
+    public String cotizaTerrestre(){
+    return "/cotizar/cotizaTerrestre";
+    } 
+    @GetMapping("/cotizar/cotizarMaritimo")
+    public String cotizaMaritimo(){
+    return "/cotizar/cotizarMaritimo";
+     }
 }
