@@ -4,40 +4,137 @@
         <meta charset="UTF-8">
         <!-- <link href="/css/inicio.css" rel="stylesheet" type="text/css"/> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.bundle.min.js"></script>
         <link href="/css/fondos.css" rel="stylesheet" type="text/css"/>
-        <a ></a>
-    </head>
-    <body>
-        <div class="container-fluid colorB">
+    <a ></a>
+</head>
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+<body>
+    <div class="container-fluid colorB">
         <header th:fragment="header">
             <h1 class="lead text-center font">Asesoria y Cotizaciones PADAZU </h1>
             <nav class="navbar navbar-expand-lg navbar-light colorB">
-              <div class="container-fluid navbar-nav">
+                <div class="container-fluid navbar-nav">
                     <a class="nav-link colorBtn font2" th:href="@{/}">Inicio |</a>
-                    <a class="nav-link colorBtn font2" th:href="@{/cotizar/transporteCotizar}">Informacion cotizar|</a>
+                    <a class="nav-link colorBtn font2" th:href="@{/cotizar/transporteCotizar}">Cotizar|</a>
                     <a class="nav-link colorBtn font2" th:href="@{/usuario/loginUsuario}">Login |</a>
-              </div>
+                </div>
             </nav>
         </header>
-        </div>
-            <nav>
-              <div class="container-xl">
-                <div class="row">
-                  <div class=" col-xl" style=" background-color: #2388da" >
-                  <img src="/imagenes/Fondo.png" width="3000" height="269.6" alt="..."> 
-                  <p class="font4" >Comparacion de costos por empresa</p>
+    </div>
+    <nav>
+        <div class="container-xl">
+            <div class="row">
+                <div class=" col-xl" style=" background-color: #2388da" >
+                    <img src="/imagenes/Fondo.png" width="3000" height="269.6" alt="..."> 
+                    <p class="font4" >Comparacion de costos por empresa</p>
                 </div>
-                </div>   
-              </div>
-            </nav>
-        </br></br></br></br></br>
+            </div>   
+        </div>
+    </nav>
+    </br></br></br></br></br>
+
+
+    
+        <h1 class="container font" background-color="grey">Seleccione el servicio que desea cotizar:</h1>
+<label class=" container">Maritimo
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Terrestre
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Aereo
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>   
+ <label for="tentacles">Agregue la cantidad de contenedores a alquilar:</label>
+
+<input type="number" id="tentacles" name="tentacles"
+       min="1" max="100" > 
+
+<button>Cotizar</button>
+      
         
         
-                    <footer th:fragment="footer" class="footer"> 
-          <hr/> <img src="imagenes/facebook.png"  width="22"/> 
-          <img src="imagenes/insta.png"  width="21"/> 
-          <img src="imagenes/whatsapp.png"  width="18"/> Derechos reservados &COPY; 2022<address style="display: inline" > Tel 8898-7744 </address> 
-      </footer> 
-        </aside>
- </body>
+        
+            </div>
+        </nav>
+    </header>
+</div>
+    
+    
+
+<footer th:fragment="footer" class="footer"> 
+    <hr/> <img src="imagenes/facebook.png"  width="22"/> 
+    <img src="imagenes/insta.png"  width="21"/> 
+    <img src="imagenes/whatsapp.png"  width="18"/> Derechos reservados &COPY; 2022<address style="display: inline" > Tel 8898-7744 </address> 
+</footer> 
+</aside>
+</body>
 </html>
