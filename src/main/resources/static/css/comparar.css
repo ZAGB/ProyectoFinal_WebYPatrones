@@ -38,3 +38,11 @@ text-align: center;
     margin: 0 3px;
     
 }
+.total-topay {
+    text-align: center;
+    
+}
+.total-topay h2 {
+    width: 100%;
+    border-bottom: 1px solid #666666;
+}
