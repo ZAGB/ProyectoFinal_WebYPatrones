@@ -33,103 +33,107 @@
                 <div class="row">
                     <div class=" col-xl" style=" background-color: #2388da" >
                         <img src="/imagenes/Fondo.png" width="3000" height="269.6" alt="..."> 
-                        <p class="font4" >Aqui podra encontrar todas las empresas Maritimas con las cuales puede cotizar</p>
+                        <p class="font3" >Aqui podra encontrar todas las empresas Maritimas con las cuales puede cotizar</p>
                     </div>
                 </div>   
             </div>
         </nav>
         <table border="0">
             <thead>
-                <tr>
-                    <th><a class="nav-link colorBtn font2">Empresas con las que puede cotizar |</a></th>
-                    <th><a class="nav-link colorBtn font2">Marque dos opciones para comparar |</a></th>
-                    <th><a class="nav-link colorBtn font2">Cotizar y Comparar. |</a></th>
-                </tr>
-            </thead>
-            <tbody>
             <div>
+                <div>
+                    <nav  class="fontcot coti text-center">
+                        <a>Empresas con las que puede cotizar  |</a>
+                        <a>Marque dos opciones para comparar |</a>
+                        <a th:href="@{/}">Cotizar y Comparar |</a>
+                    </nav>
+                </div>
             </div>
-        </tbody>
-    </table>
-    <div>
-    </div>
-    <table class="table table-hover" border="0" width="3" cellspacing="2">
-        <thead>
-            <tr>
-                <th><img class="marg" src="/imagenes/Hamburg-Sud-maritimo.jpg" width="200" height="200" alt="Hamburg-Sud-maritimo"/>
-                    <p class="font6 marg">Cotiza con Hamburg Sud de MAESRSK confiable y seguro! </p>
-                </th>
-
-                <th><div class="form-check">
-                        <input class="form-check-input sizeC marg3" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                        </label>
-                </th>
-                <th> <a href="@" class="btn btn-danger">Cotizar</a></th>
-            </tr>
         </thead>
-        <div>
-        </div>
         <tbody>
         <div>
         </div>
+    </tbody>
+</table>
+<div>
+</div>
+<table class="table table-hover" border="0" width="3" cellspacing="2">
+    <thead>
         <tr>
-        <div>
-            <div>
-                <th><img class="marg" src="/imagenes/TWILL.jpg" width="200" height="200" alt="TWILL"/>
-                    <p class="font6 marg">Cotiza con Twill de MAESRSK confiable y seguro! </p>
-                </th>
-                <th><div class="form-check">
-                        <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                        </label>
-                </th>
-                <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
-            </div>
-        </div>
-    </tr>
-    <div>
-    </div>
-    <tr>
-        <th><img class="marg" src="/imagenes/cps-aereo-maritimo-terrestre.png" width="200" height="200" alt="cps-aereo-maritimo-terrestre"/>
-            <p class="font6">Cotiza con CPS transports confiable y seguro! </p>
-        </th>
-        <th><div class="form-check">
-                <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                </label>
-        </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
-    </tr>
-    <div>
-    </div>
-    <tr>
-        <th><img class="marg" src="/imagenes/novaMaritimo.jpg" width="200" height="200" alt="novaMaritimo"/>
-            <p class="font6">Cotiza con Nova Logistics confiable y seguro! </p>
-        </th>
-        <th><div class="form-check">
-                <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                </label>
-        </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
-    </tr>
-    <div>
-    </div>
-    <tr>
+            <th><img class="marg" src="/imagenes/Hamburg-Sud-maritimo.jpg" width="300" height="300" alt="Hamburg-Sud-maritimo"/>
+                <p class="font6 marg">Cotiza con Hamburg Sud de MAESRSK confiable y seguro! </p>
+            </th>
 
-        <th><img class="marg" src="/imagenes/daco-maritimo-terrestre-aereo.png" width="200" height="200" alt="maritimo2"/>
-            <p class="font6">Cotiza con Daco Trasnportes confiable y seguro! </p>
-        </th>
-        <th><div class="form-check">
-                <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                </label>
-        </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
-    </tr>
+            <th><div class="form-check">
+                    <input class="form-check-input sizeC marg3" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    </label>
+            </th>
+            <th> <a th:href="@{/comparacion/comparacion}" class="btn btn-danger">Cotizar</a></th>
+        </tr>
+    </thead>
     <div>
     </div>
+    <tbody>
+    <div>
+    </div>
+    <tr>
+    <div>
+        <div>
+            <th><img class="marg" src="/imagenes/TWILL.jpg" width="300" height="300" alt="TWILL"/>
+                <p class="font6 marg">Cotiza con Twill de MAESRSK confiable y seguro! </p>
+            </th>
+            <th><div class="form-check">
+                    <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    </label>
+            </th>
+            <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+        </div>
+    </div>
+</tr>
+<div>
+</div>
+<tr>
+    <th><img class="marg" src="/imagenes/cps-aereo-maritimo-terrestre.png" width="300" height="300" alt="cps-aereo-maritimo-terrestre"/>
+        <p class="font6">Cotiza con CPS transports confiable y seguro! </p>
+    </th>
+    <th><div class="form-check">
+            <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            </label>
+    </th>
+    <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+</tr>
+<div>
+</div>
+<tr>
+    <th><img class="marg" src="/imagenes/novaMaritimo.jpg" width="300" height="300" alt="novaMaritimo"/>
+        <p class="font6">Cotiza con Nova Logistics confiable y seguro! </p>
+    </th>
+    <th><div class="form-check">
+            <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            </label>
+    </th>
+    <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+</tr>
+<div>
+</div>
+<tr>
+
+    <th><img class="marg" src="/imagenes/daco-maritimo-terrestre-aereo.png" width="300" height="300" alt="maritimo2"/>
+        <p class="font6">Cotiza con Daco Trasnportes confiable y seguro! </p>
+    </th>
+    <th><div class="form-check">
+            <input class="form-check-input sizeC" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            </label>
+    </th>
+    <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+</tr>
+<div>
+</div>
 </tbody>
 </table>
 

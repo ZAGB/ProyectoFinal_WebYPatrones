@@ -14,6 +14,8 @@ public class ComparacionController {
     public String Cotizacion(){
     return "/comparacion/Cotizar";   
     }
+
+    
     @GetMapping("/comparacion/CotizarYComparar")
     public String Comparacion(){
     return "/comparacion/CotizarYComparar";   
