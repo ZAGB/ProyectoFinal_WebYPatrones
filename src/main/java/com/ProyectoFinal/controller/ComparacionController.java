@@ -14,4 +14,8 @@ public class ComparacionController {
     public String Comparacion(){
     return "/comparacion/comparacionTransporte";   
     }
+    @GetMapping("/comparacion/comparacionTransporte_1")
+    public String ComparacionTransporte(){
+    return "/comparacion/comparacionTransporte_1";   
+    }
 }
