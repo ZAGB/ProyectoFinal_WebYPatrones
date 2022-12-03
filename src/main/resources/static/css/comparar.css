@@ -46,3 +46,9 @@ text-align: center;
     width: 100%;
     border-bottom: 1px solid #666666;
 }
+
+.botonsize{
+    width: 23rem;
+    height: 44px;
+    
+}
