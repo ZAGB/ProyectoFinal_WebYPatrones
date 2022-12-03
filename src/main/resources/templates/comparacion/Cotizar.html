@@ -7,7 +7,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.bundle.min.js"></script>
         <link href="/css/fondos.css" rel="stylesheet" type="text/css"/>
         <link href="/css/comparar.css" rel="stylesheet" type="text/css"/>
-        /*prueba*/
     <a ></a>
 </head>
 <body>
@@ -37,57 +36,94 @@
                 <div style="margin:6rem 0; text-align: center;" >
                     <h2 class="font2"> Informacion Requerida </h2>   
                 </div>
-                <div class="container-fluid" style="height: 700px;">
+                <div class="container-fluid" style="font-style: italic; font-size: 1.8rem; color: #7f7f7f;
+                     ">
                     <div class="col-10 col-md-3 ">
                         <img src="/imagenes/contenedores.jpg" width="100%" alt="..." > 
 
                     </div>
-                    <div class="col-10 col-md-9 bg-danger">
+                    <div class="col-md-9 col-10">
+                        <div class="row" >
                         <p class="text-format"> Escoja el servicio que desea cotizar:
                         </p>
                         <div>
-                            <form>
-                                <div>
-                                <label class="contenido">
-                                    Maritimo
-                                </label>
-                                    
-                                <input type="radio" value="Maritimo">
+                            <form class="form-height">
+                                <div class="form-radio">
+                                    <label>
+                                        Maritimo
+                                    </label>
+
+                                    <input type="radio" value="Maritimo">
                                 </div>
-                                <div>
-                                <label class="contenido">
-                                    Terrestre
-                                </label>
-                                    
-                                <input type="radio" value="Maritimo">
-                                </div><div>
-                                <label class="contenido">
-                                    Aereo
-                                </label>
-                                    
-                                <input type="radio" value="Maritimo">
+                                <div class="form-radio">
+                                    <label>
+                                        Terrestre
+                                    </label>
+
+                                    <input type="radio" value="Terrestre">
                                 </div>
-                                <div class="row"><!-- comment -->
+                                <div class="form-radio">
+                                    <label>
+                                        Aereo
+                                    </label>
+
+                                    <input type="radio" value="Aereo">
+                                </div>
+                                <div class="row" style="margin-top: 1rem;"><!-- comment -->
                                     <div class="col-12 col-md-6"><!-- comment -->
                                         <p> 
                                             Agregue la antidad de contenedores a alquilar:
                                         </p>
                                     </div>
                                     <div class="col-12 col-md-6"><!-- comment -->
-                              <div class="cotizar-unidades">
-                                        <div class="bg-warning">
-                                 thr
-                                </div>
-                                  <div class="bg-primary">
-                                 thr
-                                </div>
-                                     </div>       
+                                        <div class="cotizar-unidades">
+
+                                            <input type="number" placeholder="Unidades" style="font-style: normal;"> 
+
+                                            </input>
+
+                                            <buttom type="submit">
+                                                <i>
+                                                    Cotizar
+                                                </i>
+                                            </buttom>
+
+                                        </div>       
                                     </div>
                                 </div>
                         </div>
                         </form>
 
-                    </div>    
+                    </div> 
+                    <div class="col-12">
+                              <div class="row" style="margin-top: 2rem;">
+                        
+                            <div class="col-12 col-md-5 ">
+                                <p>
+                                    Total a pagar en dolares:
+                                </p>
+                                <p>
+                                    Costo de unidad en dolares:
+                                </p>
+                            </div>
+                        <div class="col-12 col-md-7 ">
+                                <p class="tiny-text">
+                                    Peso de la Tana 3, 750 kg
+                                </p>
+                                <p class="tiny-text">
+                                    Capacidad de carga util 27, 600 kg
+                                </p>
+                                <p class="tiny-text">
+                                    Capacidad cubica 67,7 m3
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                                      </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
