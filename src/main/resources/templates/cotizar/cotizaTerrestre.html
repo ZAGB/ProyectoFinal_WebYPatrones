@@ -39,11 +39,15 @@
         </nav>
         <table border="0">
             <thead>
-                <tr>
-                    <th><a class="nav-link colorBtn font2">Empresas con las que puede cotizar |</a></th>
-                    <th><a class="nav-link colorBtn font2">Marque dos opciones para comparar |</a></th>
-                    <th><a class="nav-link colorBtn font2">Cotizar y Comparar. |</a></th>
-                </tr>
+               <div>
+                <div>
+                    <nav  class="fontcot coti text-center">
+                        <a>Empresas con las que puede cotizar  |</a>
+                        <a>Marque dos opciones para comparar |</a>
+                        <a th:href="@{/comparacion/CotizarYComparar}">Cotizar y Comparar |</a>
+                    </nav>
+                </div>
+            </div>
             </thead>
             <tbody>
             <div>
@@ -52,11 +56,11 @@
     </table>
     <div>
     </div>
-    <table class="table table-hover" border="0" width="3" cellspacing="2">
+    <table class="table table-hover" border="0" width="3" cellspacing="0">
         <thead>
             <tr>
 
-                <th><img class="marg" src="/imagenes/UPS.jpg" width="200" height="200" alt="UPS"/>
+                <th><img class="marg" src="/imagenes/UPS.jpg" width="300" height="300" alt="UPS"/>
                     <p class="font6 marg">Cotiza con UPS confiable y seguro! </p>
                 </th>
 
@@ -65,7 +69,7 @@
                         <label class="form-check-label" for="flexCheckDefault">
                         </label>
                 </th>
-                <th> <a href="@" class="btn btn-danger">Cotizar</a></th>
+                <th> <a th:href="@{/comparacion/Cotizar}" class="btn btn-danger font7">Cotizar</a></th>
             </tr>
         </thead>
         <div>
@@ -76,7 +80,7 @@
         <tr>
         <div>
             <div>
-                <th><img class="marg" src="/imagenes/TWILL.jpg" width="200" height="200" alt="TWILL"/>
+                <th><img class="marg" src="/imagenes/TWILL.jpg" width="300" height="300" alt="TWILL"/>
                     <p class="font6 marg">Cotiza con Twill de MAESRSK confiable y seguro! </p>
                 </th>
                 <th><div class="form-check">
@@ -84,14 +88,14 @@
                         <label class="form-check-label" for="flexCheckDefault">
                         </label>
                 </th>
-                <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+                <th> <a th:href="@{/comparacion/Cotizar}" class="btn btn-danger  font7">Cotizar</a></th>
             </div>
         </div>
     </tr>
     <div>
     </div>
     <tr>
-        <th><img class="marg" src="/imagenes/CN.png" width="200" height="200" alt="cps-aereo-maritimo-terrestre"/>
+        <th><img class="marg" src="/imagenes/CN.png" width="300" height="300" alt="cps-aereo-maritimo-terrestre"/>
             <p class="font6">Cotiza con CN logistics confiable y seguro! </p>
         </th>
         <th><div class="form-check">
@@ -99,12 +103,12 @@
                 <label class="form-check-label" for="flexCheckDefault">
                 </label>
         </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+        <th> <a th:href="@{/comparacion/Cotizar}" class="btn btn-danger  font7">Cotizar</a></th>
     </tr>
     <div>
     </div>
     <tr>
-        <th><img class="marg" src="/imagenes/FedEx-aereo-terrestre.png" width="200" height="200" alt="maritimo2"/>
+        <th><img class="marg" src="/imagenes/FedEx-aereo-terrestre.png" width="300" height="300" alt="maritimo2"/>
             <p class="font6">Cotiza con FedEx confiable y seguro! </p>
         </th>
         <th><div class="form-check">
@@ -112,13 +116,13 @@
                 <label class="form-check-label" for="flexCheckDefault">
                 </label>
         </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+        <th> <a th:href="@{/comparacion/Cotizar}" class="btn btn-danger  font7">Cotizar</a></th>
     </tr>
     <div>
     </div>
     <tr>
 
-        <th><img class="marg" src="/imagenes/daco-maritimo-terrestre-aereo.png" width="200" height="200" alt="maritimo2"/>
+        <th><img class="marg" src="/imagenes/daco-maritimo-terrestre-aereo.png" width="300" height="300" alt="maritimo2"/>
             <p class="font6">Cotiza con Daco confiable y seguro! </p>
         </th>
         <th><div class="form-check">
@@ -126,7 +130,7 @@
                 <label class="form-check-label" for="flexCheckDefault">
                 </label>
         </th>
-        <th> <a href="@" class="btn btn-danger marg2">Cotizar</a></th>
+        <th> <a th:href="@{/comparacion/Cotizar}" class="btn btn-danger  font7">Cotizar</a></th>
     </tr>
     <div>
     </div>

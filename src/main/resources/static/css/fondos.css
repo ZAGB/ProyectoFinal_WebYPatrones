@@ -101,3 +101,26 @@ body{
     width: 100%;
    
 }
+
+ .encabezado{
+        background-color: #2388da;
+    overflow-x: hidden;
+    height: 270px;
+    position: absolute;
+    width: 100%;
+    }
+    .encabezado p {
+font-family: sans-serif;
+font-size: 5rem;
+    font-weight: bold;
+    color: #40a9ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    
+    .encabezado img{
+    width: 100vw;
+    }

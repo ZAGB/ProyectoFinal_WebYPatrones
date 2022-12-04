@@ -25,7 +25,7 @@
             <div class="row">
                 <div class=" col-xl" style=" background-color: #2388da" >
                     <img src="/imagenes/Fondo.png" width="3000" height="269.6" alt="..."> 
-                    <p class="font4" >Lo mejor en asesorias en todo lo que necesites, profecional y completo.</p>
+                    <p class="font3" >Lo mejor en asesorias en todo lo que necesites, profecional y completo.</p>
                 </div>
             </div>   
         </div>
@@ -42,14 +42,17 @@
         <div class="row">
             <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4" >
                 </br>
+                <img src="../../static" alt=""/>
                 <center><div class=" card" style="width: 25rem;">
-                        <img href="/imagenes/cotiza" class="card-img-top rounded" alt="...">
+                        <div class="img-container">
+                        <img src="/imagenes/cotiza1.png" alt="...">
+                        
                         <div class="card-body">
                             <h5 class="card-title">Cotizacion reponsable</h5>
                             <p class="card-text">Nos hacemos responsables de entregar las mejores cotizaciones del mercado y justo a tus necesidades</p>
-                            <a href="@Cotizar" class="btn btn-danger">Cotizar</a>
                         </div>
-                    </div></center> 
+                    </div>
+                </div></center> 
                 </br>
             </div>
             <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4">
@@ -59,7 +62,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Asesorias personalizadas</h5>
                             <p class="card-text">Nos adaptamos a tu presupuesto y te damos siempre las mejores opciones.</p>
-                            <a href="@Cotizar" class="btn btn-danger">Cotizar</a>
+                            <a th:href="@{/cotizar/transporteCotizar}" class="btn btn-danger">Cotizar</a>
                         </div>
                     </div></center>
                 </br>
@@ -67,11 +70,11 @@
             <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4">
                 </br>
                 <center><div class="card " style="width: 25rem;">
-                        <img src="imagenes/profecionales.jpg" class="card-img-top rounded" alt="...">
+                        <img src="/imagenes/cotiza3.jpg" class="card-img-top rounded" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Personal profecional en el mercado</h5>
                             <p class="card-text">Contamos con personal altamente calificado y con pleno conocimiento del comercion internacional para entregar siempre la mejor informacion </p>
-                            <a href="@Cotizar" class="btn btn-danger">Cotizar</a>
+                            
                         </div>
                     </div></center> 
                 </br>
