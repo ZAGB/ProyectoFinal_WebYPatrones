@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="cliente")
+@Table(name="usuario")
 public class Usuario implements Serializable{
     
     private static final long serialVersionUID = 1L;
@@ -24,18 +24,17 @@ public class Usuario implements Serializable{
     private String contraseña;
     private String ciudad;
     private String codigopostal;
-    private String foto; 
+    
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String apellidos, String contraseña, String ciudad, String codigopostal, String foto) {
+    public Usuario(String nombre, String apellidos, String contraseña, String ciudad, String codigopostal) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.contraseña = contraseña;
         this.ciudad = ciudad;
         this.codigopostal = codigopostal;
-        this.foto = foto;
     }
     
 

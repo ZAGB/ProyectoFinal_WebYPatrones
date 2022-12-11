@@ -2,7 +2,8 @@
 package com.ProyectoFinal.controller;
 
 
-import com.ProyectoFinal.DAO.UsuarioDao;
+
+import com.ProyectoFinal.Service.UsuarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,13 +15,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UsuarioController {
     
     @Autowired
-    private UsuarioDao usuarioDao;
+    private UsuarioService usuarioService;
     
     @GetMapping("/usuario/loginUsuario")
     public String Ingresar(Model model){
         log.info("Estamos usando arquitectura MVC");
         
-        var usuarios =usuarioDao.findAll();
+        var usuarios =usuarioService.getUsuarios();
         model.addAttribute("usarios", usuarios);
   
     return "/usuario/loginUsuario";
@@ -30,7 +31,7 @@ public class UsuarioController {
     public String PerfilUsuario(Model model){
         log.info("Estamos usando arquitectura MVC");
         
-        var usuarios =usuarioDao.findAll();
+        var usuarios =usuarioService.getUsuarios();
         model.addAttribute("usarios", usuarios);
         
     return "/usuario/cuentaUsuario";
@@ -40,9 +41,18 @@ public class UsuarioController {
     public String RegistrarOModificar(Model model){
         log.info("Estamos usando arquitectura MVC");
         
-        var usuarios =usuarioDao.findAll();
+        var usuarios =usuarioService.getUsuarios();
         model.addAttribute("usarios", usuarios);
     return "/usuario/formularioRegistroUsuario";
+    } 
+    
+        @GetMapping("/usuario/ModificarUsuario")
+    public String Modificar(Model model){
+        log.info("Estamos usando arquitectura MVC");
+        
+        var usuarios =usuarioService.getUsuarios();
+        model.addAttribute("usarios", usuarios);
+    return "/usuario/ModificarUsuario";
     } 
     
 }

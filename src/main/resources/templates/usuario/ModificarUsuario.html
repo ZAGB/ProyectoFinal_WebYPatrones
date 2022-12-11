@@ -38,67 +38,47 @@
                   </div>
                 </nav>
         </br></br></br></br></br>
-    <center><p class="font2"> Perfil de Usuario</p></center>
+    <center><p class="font2"> Modificar datos de Usuario</p></center>
         </br></br>
     <section>
             <div class="container">
 
               <div class="row">
-                  
-                <table class="table caption-top">
-                      <caption>Lista de datos</caption>
-
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Nombre</td>
-                          <td>Otto</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Apellidos</td>
-                          <td>Otto</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Contraseña</td>
-                          <td>Otto</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>Ciudad</td>
-                          <td>Otto</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>Codigo postal</td>
-                          <td>Otto</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"></th>
-                          <td><a th:href="@{/usuario/ModificarUsuario}" class="btn btn-primary">Modificar Usuario</a></td>
-                          <td><a th:href="@{/usuario/cuentaUsuario}" class="btn btn-danger"> Eliminar</a></td>
-                        </tr>
-                        
-                        </br></br>
-                        
-                        <tr>
-                          <div>   
-                              <div class="CustomP" id="foto">
-                                   <img src="/imagenes/noprofil.jpg" class=" mx-auto d-block CustomP" >
-                              </div> 
-                                  
+                  <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8" >
+                      <center><form method="post" enctype="multipart/form-data">
+                          <div class="mb-3" style="width: 35rem">
+                                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text"></div>
                           </div>
-                         </br> </br>    
-                            
-                        </tr>
-                        
-                        
-                      </tbody>
-                </table>
-
-                  
- 
+                          <div class="mb-3" style="width: 35rem">
+                                <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text"></div>
+                          </div>
+                          <div class="mb-3" style="width: 35rem">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3" style="width: 35rem">
+                                <label for="exampleInputEmail1" class="form-label">Digite la ciudad</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                           <div id="emailHelp" class="form-text"></div>
+                           </div>
+                           <div class="mb-3" style="width: 35rem">
+                                <label for="exampleInputEmail1" class="form-label">Digite El codigo postal</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text"></div>
+                          </div>
+                          </br></br>
+                              <a th:href="@{/usuario/cuentaUsuario}" class="btn btn-primary"> Actualizar </a>
+                      </center></form>
+                  </div>
+                  <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4">   
+                      <div class="CustomP" id="foto">
+                           <img src="/imagenes/noprofil.jpg" class=" mx-auto d-block CustomP" >
+                      </div> 
+                 </div>
             </div>
     </section>
 	<footer th:fragment="footer" class="footerC" style=" background-color: #2388da">

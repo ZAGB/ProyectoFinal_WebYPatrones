@@ -60,10 +60,7 @@
                                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                           </div>
-                          <div class="mb-3" style="width: 35rem">
-                                <label for="exampleInputPassword1" class="form-label">Ingresa nuevamente la contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                          </div>
+
                           <div class="mb-3" style="width: 35rem">
                                 <label for="exampleInputEmail1" class="form-label">Digite la ciudad</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -75,21 +72,13 @@
                           <div id="emailHelp" class="form-text"></div>
                           </div>
                           </br></br>
-                              <button type="submit" class="btn btn-primary">Registrarse</button>
+                              <a th:href="@{/usuario/cuentaUsuario}" class="btn btn-danger">Registrarse</a>
                       </center></form>
                   </div>
                   <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4">   
                       <div class="CustomP" id="foto">
                            <img src="/imagenes/noprofil.jpg" class=" mx-auto d-block CustomP" >
                       </div> 
-                          <div class="roundC">
-                              </br>
-                              <center><input type="file"></center>
-                              <script>
-                                
-                                         
-                              </script>
-                          </div>
                  </div>
             </div>
     </section>

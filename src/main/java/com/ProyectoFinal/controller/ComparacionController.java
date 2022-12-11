@@ -10,12 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Slf4j
 public class ComparacionController {
 
-    @GetMapping("/comparacion/Cotizar")
-    public String Cotizacion(){
-    return "/comparacion/Cotizar";   
-    }
-    @GetMapping("/comparacion/CotizarYComparar")
+    @GetMapping("/comparacion/comparacionTransporte")
     public String Comparacion(){
-    return "/comparacion/CotizarYComparar";   
+    return "/comparacion/comparacionTransporte";   
     }
 }
